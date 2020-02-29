@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #ccc;
+            background: url(bg1.png)no-repeat;
+            background-size: cover;
+        }
+        
+        div {
+            position: absolute;
+            width: 200px;
+            height: 100px;
+            background: url(bear.png)no-repeat;
+            animation: play01 .5s steps(8) infinite, play02 4s forwards;
+        }
+        /*需要两个动画，一个是熊的状态变化，一个是位置变化*/
+        
+        @keyframes play01 {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: -1600px 0;
+            }
+        }
+        
+        @keyframes play02 {
+            0% {
+                left: 0;
+            }
+            100% {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

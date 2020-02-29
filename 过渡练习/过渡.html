@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .box {
+            width: 532px;
+            height: 417px;
+            background-color: #ffffff;
+            margin: 100px auto;
+        }
+        
+        .box .box_bd {
+            width: 522px;
+            height: 101px;
+            background-color: #7ac6e9;
+            border-left: 10px solid #202020;
+            margin-bottom: 5px;
+            text-align: center;
+            transition: all 2s;
+        }
+        
+        .box .box_bd h1 {
+            padding-top: 25px;
+            padding-bottom: 12px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        
+        .box .box_bd:last-child {
+            margin-bottom: 0;
+        }
+        
+        .box .box_bd:hover {
+            background-color: black;
+            border-left-color: blue;
+            color: white;
+            cursor: pointer;
+        }
+        
+        .box .box_bd:hover h1 {
+            transform: scale(0.5, 0.5);
+        }
+        
+        .box .box_bd:hover p {
+            transform: scale(1.5, 1.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box_bd">
+            <h1>欢迎大家!</h1>
+            <p>欢迎大家来学习前端!</p>
+        </div>
+        <div class="box_bd">
+            <h1>欢迎大家!</h1>
+            <p>欢迎大家来学习前端!</p>
+        </div>
+        <div class="box_bd">
+            <h1>欢迎大家!</h1>
+            <p>欢迎大家来学习前端!</p>
+        </div>
+        <div class="box_bd">
+            <h1>欢迎大家!</h1>
+            <p>欢迎大家来学习前端!</p>
+        </div>
+    </div>
+</body>
+
+</html>

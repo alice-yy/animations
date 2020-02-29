@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+input,
+button {
+    outline: none;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+.f4_box {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 175px;
+    transition: all 3s linear;
+}
+
+.walk_01 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 154px;
+    height: 121px;
+    opacity: 0;
+    /*位置转换*/
+    animation: move 15s linear infinite;
+}
+
+.west_01 {
+    width: 154px;
+    height: 121px;
+    background: url(../images/txgc_6d0e9e5.png)no-repeat;
+    /*状态的转换*/
+    animation: play01 .4s steps(2) infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(-160px, 0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(2000px, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes play01 {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -308px 0;
+    }
+}
+
+.walk_02 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 167px;
+    height: 176px;
+    opacity: 0;
+    animation: move 15s linear 2s infinite;
+}
+
+.west_02 {
+    width: 167px;
+    height: 176px;
+    background: url(../images/txgh_fee2457.png)no-repeat;
+    animation: play02 .4s steps(2) infinite;
+}
+
+@keyframes play02 {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -334px 0;
+    }
+}
+
+.walk_03 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 167px;
+    height: 150px;
+    opacity: 0;
+    animation: move 15s linear 4s infinite;
+}
+
+.west_03 {
+    width: 167px;
+    height: 150px;
+    background: url(../images/txgl_c15cfd8.png)no-repeat;
+    animation: play03 .4s steps(2) infinite;
+}
+
+@keyframes play03 {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -332px 0;
+    }
+}
+
+.walk_04 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 167px;
+    height: 150px;
+    opacity: 0;
+    animation: move 15s linear 6s infinite;
+}
+
+.west_04 {
+    width: 167px;
+    height: 157px;
+    background: url(../images/txgq_d281c9b.png)no-repeat;
+    animation: play04 .4s steps(2) infinite;
+}
+
+@keyframes play04 {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -342px 0;
+    }
+}

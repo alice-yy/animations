@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            height: 0;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        body {
+            background-color: #e8e8e8;
+        }
+        
+        .box {
+            width: 1100px;
+            height: 255px;
+            margin: 100px auto;
+        }
+        
+        .box ul li {
+            position: relative;
+            float: left;
+            width: 255px;
+            height: 255px;
+            background-color: #f4f4f4;
+            margin-right: 10px;
+            border-radius: 50%;
+            transition: all 1s linear;
+        }
+        
+        .box ul li a {
+            position: absolute;
+            width: 232px;
+            height: 232px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #ffffff;
+            border-radius: 50%;
+        }
+        
+        .box ul li p {
+            width: 232px;
+            height: 100px;
+            text-align: center;
+            padding-top: 40px;
+            transition: all 1s linear;
+        }
+        
+        .box ul li p img {
+            width: 70px;
+            height: 70px;
+        }
+        
+        .box ul li a .bd {
+            text-align: center;
+            transition: all 1s linear;
+        }
+        
+        .box ul li a .bd h1 {
+            font-size: 16px;
+        }
+        
+        .box ul li:hover {
+            background-color: #eeedeb;
+            transform: rotate(360deg);
+        }
+        
+        .box ul li:hover img {
+            transform: scale(1.5, 1.5);
+        }
+        
+        .box ul li:hover .bd h1 {
+            font-size: 22px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <ul>
+            <li>
+                <a href="#">
+                    <p><img src="images/1.png" alt="" /> </p>
+                    <div class="bd">
+                        <h1>讲师介绍</h1>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p><img src="images/1.png" alt="" /> </p>
+                    <div class="bd">
+                        <h1>讲师介绍</h1>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p><img src="images/1.png" alt="" /> </p>
+                    <div class="bd">
+                        <h1>讲师介绍</h1>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p><img src="images/1.png" alt="" /> </p>
+                    <div class="bd">
+                        <h1>讲师介绍</h1>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

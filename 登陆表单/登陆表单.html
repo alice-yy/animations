@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #feffff;
+        }
+        
+        .login-form-wrap {
+            background: #5170ad;
+            box-shadow: 0 0 10px 5px rgba(0, 0, 0, .3);
+            border-radius: 5px;
+            width: 360px;
+            height: 380px;
+            margin: 10px auto;
+            padding: 50px 30px 0 30px;
+            text-align: center;
+        }
+        
+        .login-form-wrap h1 {
+            margin: 0 0 50px 0;
+            font-size: 26px;
+            color: #ffffff;
+        }
+        
+        .login-form-wrap h5 {
+            margin-top: 40px;
+        }
+        
+        .login-form-wrap h5 a {
+            font-size: 16px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 400;
+        }
+        
+        .login-form input[type="email"],
+        .login-form input[type="password"] {
+            width: 352px;
+            border: 1px solid #314d89;
+            outline: none;
+            padding: 12px 0 12px 8px;
+            color: #afafaf;
+            cursor: pointer;
+        }
+        
+        .login-form input[type="email"] {
+            border-bottom: none;
+            border-radius: 4px 4px 0 0;
+            padding-bottom: 13px;
+        }
+        
+        .login-form input[type="password"] {
+            border-top: none;
+            border-radius: 0 0 4px 4px;
+        }
+        
+        .login-form input[type="submit"] {
+            background: #e0e0e0;
+            height: 50px;
+            margin-top: 20px;
+            width: 100%;
+            border-radius: 3px;
+            padding: 8px auto 8px auto;
+            font-size: 17px;
+            color: #636363;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="login-form-wrap">
+        <h1>陈浩洋</h1>
+        <form class="login-form" action="" method="">
+            <label>
+                <input type="email" value="" name="Email" placeholder="Email">
+            </label>
+            <label>
+                <input type="password" value="" name="password" placeholder="Password">
+            </label>
+            <label>
+                <input type="submit" name="登陆">
+            </label>
+        </form>
+        <h5><a href="#">忘记密码</a> </h5>
+    </section>
+</body>
+
+</html>

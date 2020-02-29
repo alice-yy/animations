@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            /*盒子需要通过透视来看出近大远小，在父盒子section上
+            添加，但是父盒子还要做旋转，在父盒子的父盒子上进行添加*/
+            perspective: 1000px;
+        }
+        
+        section {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: 200px auto;
+            transform-style: preserve-3d;
+            /*自动旋转，添加动画效果,沿着y轴旋转*/
+            animation: rotate 10s linear infinite;
+            /*可以在里面添加一个图片*/
+            background: url(dog.jpg)no-repeat;
+        }
+        
+        section:hover {
+            animation-play-state: paused;
+        }
+        
+        @keyframes rotate {
+            0% {
+                transform: rotateY(0);
+            }
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+        
+        section div {
+            /*用定位先叠加一起再摆放位置*/
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url(dog.jpg)no-repeat;
+        }
+        
+        section div:nth-child(1) {
+            /*第一个图片沿着z轴向前走*/
+            transform: translateZ(300px);
+        }
+        
+        section div:nth-child(2) {
+            /*先把盒子旋转一定角度，再把距离拉开*/
+            transform: rotateY(60deg) translateZ(300px);
+        }
+        
+        section div:nth-child(3) {
+            /*先把盒子旋转一定角度，再把距离拉开*/
+            transform: rotateY(120deg) translateZ(300px);
+        }
+        
+        section div:nth-child(4) {
+            /*先把盒子旋转一定角度，再把距离拉开*/
+            transform: rotateY(180deg) translateZ(300px);
+        }
+        
+        section div:nth-child(5) {
+            /*先把盒子旋转一定角度，再把距离拉开*/
+            transform: rotateY(240deg) translateZ(300px);
+        }
+        
+        section div:nth-child(6) {
+            /*先把盒子旋转一定角度，再把距离拉开*/
+            transform: rotateY(300deg) translateZ(300px);
+        }
+    </style>
+</head>
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+
+<body>
+
+</body>
+
+</html>

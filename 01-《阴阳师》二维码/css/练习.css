@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+input,
+button {
+    outline: none;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+.v_code {
+    position: relative;
+    margin-top: 52px;
+    margin-left: 50px;
+    width: 145px;
+    height: 244px;
+    background: url(../images/index_z_71df05e.png)no-repeat;
+    background-position: 0px 0px;
+}
+
+.v_code .erweima {
+    display: block;
+    width: 107px;
+    margin: 0 23px 0 19px;
+    padding-top: 50px;
+}
+
+.v_code .line {
+    position: absolute;
+    left: 13px;
+    top: 45px;
+    animation: move 4s linear infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        transform: translate3d(0, 107px, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
